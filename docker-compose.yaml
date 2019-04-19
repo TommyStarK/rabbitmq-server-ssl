@@ -12,3 +12,4 @@ services:
       - 127.0.0.1:5672:5672
     volumes:
       - ./etc/:/etc/rabbitmq/
+      - ./log/:/usr/local/var/log/rabbitmq/log/
