@@ -6,8 +6,9 @@ services:
     container_name: rabbitmq.example.com
     image: rabbitmq:3-management-alpine
     ports:
-      - 15672:15672
-      - 5671:5671
-      - 5672:5672
+      - 127.0.0.1:15671:15671
+      - 127.0.0.1:15672:15672
+      - 127.0.0.1:5671:5671
+      - 127.0.0.1:5672:5672
     volumes:
-      - ./etc:/etc/rabbitmq/
+      - ./etc/:/etc/rabbitmq/
